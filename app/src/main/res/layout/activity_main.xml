@@ -1,0 +1,31 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="6dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#e4d3fcfa"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a_view_group_that_allows_the_view_hierarchy_placed_within_it_to_be_scrolled_scroll_view_may_have_only_one_direct_child_placed_within_it_to_add_multiple_views_within_the_scroll_view_make_the_direct_child_you_add_a_view_group_for_example_linearlayout_and_place_additional_views_within_that_linearlayout_scroll_view_supports_vertical_scrolling_only_for_horizontal_scrolling_use_horizontalscrollview_instead_never_add_a_recyclerview_or_listview_to_a_scroll_view_doing_so_results_in_poor_user_interface_performance_and_a_poor_user_experience_for_vertical_scrolling_consider_nestedscrollview_instead_of_scroll_view_which_offers_greater_user_interface_flexibility_and_support_for_the_material_design_scrolling_patterns_to_learn_more_about_material_design_patterns_for_handling_scrolling_see_scrolling_techniques"/>
+        </ScrollView>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="12dp"
+            android:layout_weight="4"
+            android:id="@+id/recycler_view"/>
+
+    </LinearLayout>
+
+</FrameLayout>
